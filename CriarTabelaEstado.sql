@@ -5,8 +5,10 @@ create table estados (  -- Definir as colunas e as regras relacionadas as coluna
     nome VARCHAR(45) NOT NULL,
     sigla VARCHAR(2) NOT NULL,
     regiao ENUM('Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul') NOT NULL, -- Obria que seja um dos valores em ENUM
-    populacal DECIMAL(5,2) NOT NULL,    -- 5 digitos, sendo 2, flutuantes
+    populacao DECIMAL(5,2) NOT NULL,    -- 5 digitos, sendo 2, flutuantes
     PRIMARY KEY (id),                   -- Para ter chave primaria com 2 colunsa, basta colocar (a,b)
     UNIQUE KEY (nome),
     UNIQUE KEY (sigla)
 );
+
+DROP TABLE estados;
