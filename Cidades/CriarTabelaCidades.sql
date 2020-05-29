@@ -13,4 +13,5 @@ create table if not exists cidades (  -- Criar, caso não exista
 create table if not exists teste (  -- Tabela de teste 
     id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
+
 DROP TABLE if exists teste;
