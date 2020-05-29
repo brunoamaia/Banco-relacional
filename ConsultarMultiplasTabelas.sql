@@ -9,3 +9,11 @@ SELECT
     regiao as Região
 FROM estados e, cidades c       -- Dar uma "apelido/ abreviação" para as tabelas, ajuda reduzir os comandos
 WHERE c.estado_id = e.id;
+
+
+SELECT 
+    c.nome as Cidade,
+    e.nome as Estado,
+    regiao as Região
+FROM estados e
+INNER JOIN cidades c on c.estado_id = e.id;
